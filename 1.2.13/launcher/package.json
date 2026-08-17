@@ -1,0 +1,52 @@
+{
+  "name": "bloodpact-launcher",
+  "version": "1.0.0",
+  "description": "BloodPact Minecraft launcher — Lunar-style client with mod sync and PvP training tools",
+  "main": "src/main.js",
+  "author": "BloodPact",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "dependencies": {
+    "@xmcl/core": "2.13.0",
+    "@xmcl/installer": "5.4.0",
+    "electron": "33.2.0"
+  },
+  "devDependencies": {
+    "electron-builder": "25.1.8"
+  },
+  "build": {
+    "appId": "com.bloodpact.launcher",
+    "productName": "BloodPact",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "ui/**/*",
+      "assets/**/*",
+      "modpacks/**/*",
+      "modpack.json",
+      "config.json",
+      "bootstrap.js",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "assets/icon.png",
+      "artifactName": "BloodPact-${version}-Portable.exe"
+    }
+  },
+  "allowScripts": {
+    "electron@33.2.0": true
+  }
+}

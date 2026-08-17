@@ -1,0 +1,96 @@
+{
+  "version": 2,
+  "seeds": [
+    {
+      "id": "bloodpact-op",
+      "name": "BloodPact OP — Giant Pale Garden + Mega Cave",
+      "seed": "-7311192211761052731",
+      "tags": ["pale-garden", "cave", "community", "java"],
+      "description": "Huge gray Pale Garden biome near spawn with a massive cave system.",
+      "coordsLine": "Pale Garden + mega cave — auto-located on join"
+    },
+    {
+      "id": "all-biomes-record",
+      "name": "All Biomes + Structures",
+      "seed": "8500081009970950196",
+      "tags": ["all-biomes", "structures", "java"],
+      "description": "Every Overworld biome and structure within 1,000 blocks. Nether goodies within 250 blocks.",
+      "coordsLine": "X 0 Z 0 — fan out from spawn",
+      "highlights": [
+        {"label": "Spawn hub", "x": 0, "z": 0}
+      ]
+    },
+    {
+      "id": "five-villages-cherry",
+      "name": "Five Villages at Spawn",
+      "seed": "888880777356331877",
+      "startLabel": "Nearest village (5 villages nearby)",
+      "coordsLine": "5 villages — auto-located on join",
+      "tags": ["villages", "trial-chambers", "java"],
+      "description": "Cherry grove start with five villages, trial chambers, and pillager outpost near spawn."
+    },
+    {
+      "id": "trial-at-spawn",
+      "name": "Trial Chambers at Spawn",
+      "seed": "7948723094861289",
+      "startLabel": "Trial Chambers entrance",
+      "coordsLine": "Trial chambers — auto-located on join",
+      "tags": ["trial-chambers", "mace", "java"],
+      "description": "Meadow spawn with trial chambers ~22 blocks away — breeze loot and vaults immediately."
+    },
+    {
+      "id": "mansion-village",
+      "name": "Mansion + Village + Ancient City",
+      "seed": "5705783928676095273",
+      "startLabel": "Nearest village",
+      "coordsLine": "Village + mansion — auto-located on join",
+      "tags": ["mansion", "villages", "ancient-city", "java"],
+      "description": "Village near spawn, woodland mansion and ancient city within a few hundred blocks."
+    },
+    {
+      "id": "quad-village",
+      "name": "Quad Village Goldmine",
+      "seed": "-1813748874",
+      "startLabel": "First village cluster",
+      "coordsLine": "4 villages — auto-located on join",
+      "tags": ["villages", "trading", "java"],
+      "description": "Four villages packed near spawn — trading, iron, and blacksmith loot from minute one."
+    },
+    {
+      "id": "trial-ravine",
+      "name": "Trial Chamber Ravine",
+      "seed": "3546842701",
+      "startLabel": "Trial chamber ravine entrance",
+      "coordsLine": "Trial ravine — auto-located on join",
+      "tags": ["trial-chambers", "ravine", "java"],
+      "description": "Trial chamber entrance visible from spawn ravine — mace templates and vault loot early."
+    },
+    {
+      "id": "taiga-trial",
+      "name": "Taiga Village + Trial Chamber",
+      "seed": "-4507223816094295067",
+      "startLabel": "Taiga village on trial chamber",
+      "coordsLine": "Village + trial chamber — auto-located on join",
+      "tags": ["villages", "trial-chambers", "java"],
+      "description": "Taiga village directly above a trial chamber — beds, food, and breeze loot in one spot."
+    },
+    {
+      "id": "speedrun-village",
+      "name": "Village + Stronghold",
+      "seed": "-786581654839",
+      "startLabel": "Nearest village",
+      "coordsLine": "Village — auto-located on join",
+      "tags": ["village", "stronghold", "java"],
+      "description": "Village at spawn with stronghold nearby — fast Nether and End progression."
+    },
+    {
+      "id": "bedrock-god",
+      "name": "Bedrock God Seed",
+      "seed": "-5358713713839663905",
+      "startLabel": "Nearest village (Java layout)",
+      "coordsLine": "Village — auto-located on join (Java terrain)",
+      "tags": ["all-biomes", "villages", "bedrock"],
+      "description": "Bedrock Edition god seed — 5 blacksmiths, all biomes, trial chambers. Java terrain differs."
+    }
+  ]
+}

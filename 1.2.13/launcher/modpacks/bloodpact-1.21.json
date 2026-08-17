@@ -1,0 +1,110 @@
+{
+  "id": "bloodpact-1.21",
+  "name": "BloodPact PvP",
+  "description": "BloodPact training client on Minecraft 1.21 with performance mods.",
+  "minecraftVersion": "1.21",
+  "loader": "fabric",
+  "fabricLoaderVersion": "0.16.9",
+  "javaMajor": 21,
+  "defaultMemory": "4G",
+  "tags": ["pvp", "bloodpact"],
+  "categories": {
+    "core": "BloodPact Client",
+    "performance": "Performance",
+    "utility": "Popular Utilities"
+  },
+  "mods": [
+    {
+      "id": "bloodpact",
+      "name": "BloodPact",
+      "category": "core",
+      "required": true,
+      "source": "local",
+      "localPaths": [
+        "bundled-mods/bloodpact-1.0.0.jar",
+        "build/libs/bloodpact-1.0.0.jar",
+        "build/libs/bloodpact-1.0.0-dev.jar",
+        "mod-cache/bloodpact-1.0.0.jar"
+      ],
+      "buildHint": "Double-click 3-Build-Mod.bat in the bloodpact folder first"
+    },
+    {
+      "id": "fabric-api",
+      "name": "Fabric API",
+      "category": "core",
+      "required": true,
+      "source": "modrinth",
+      "projectId": "P7dR8mSH",
+      "fallbackFilename": "fabric-api"
+    },
+    {
+      "id": "essential",
+      "name": "Essential",
+      "category": "core",
+      "required": true,
+      "essential": true,
+      "source": "modrinth",
+      "projectId": "k2ZPuTBm",
+      "fallbackFilename": "essential"
+    },
+    {
+      "id": "cloth-config",
+      "name": "Cloth Config",
+      "category": "core",
+      "required": true,
+      "source": "modrinth",
+      "projectId": "9s6osm5g",
+      "fallbackFilename": "cloth-config"
+    },
+    {
+      "id": "modmenu",
+      "name": "Mod Menu",
+      "category": "utility",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "mOgUt4GM",
+      "fallbackFilename": "modmenu"
+    },
+    {
+      "id": "sodium",
+      "name": "Sodium",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "AANobbMI",
+      "fallbackFilename": "sodium"
+    },
+    {
+      "id": "iris",
+      "name": "Iris Shaders",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": false,
+      "source": "modrinth",
+      "projectId": "YL57xq9U",
+      "fallbackFilename": "iris"
+    },
+    {
+      "id": "lithium",
+      "name": "Lithium",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "gvQqBUqZ",
+      "fallbackFilename": "lithium"
+    },
+    {
+      "id": "ferritecore",
+      "name": "FerriteCore",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "uXXizFIs",
+      "fallbackFilename": "ferritecore"
+    }
+  ]
+}

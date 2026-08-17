@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="boxTop" x1="96" y1="88" x2="416" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#242024"/>
+      <stop offset="1" stop-color="#070508"/>
+    </linearGradient>
+    <linearGradient id="boxEdge" x1="128" y1="96" x2="384" y2="416" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3a3036"/>
+      <stop offset="1" stop-color="#120810"/>
+    </linearGradient>
+    <linearGradient id="blood" x1="196" y1="132" x2="316" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5A72"/>
+      <stop offset="0.55" stop-color="#DC143C"/>
+      <stop offset="1" stop-color="#7A0010"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 250) rotate(90) scale(150 130)">
+      <stop stop-color="#FF4D6D" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#FF4D6D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="40" y="40" width="432" height="432" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <!-- ambient glow behind box -->
+  <circle cx="256" cy="250" r="168" fill="url(#glow)"/>
+
+  <!-- blood mist / sand-like particles in front of box -->
+  <g opacity="0.85">
+    <circle cx="148" cy="198" r="4" fill="#FF6B7A"/>
+    <circle cx="176" cy="168" r="2.5" fill="#FFB3BD"/>
+    <circle cx="332" cy="176" r="3" fill="#FF5068"/>
+    <circle cx="360" cy="210" r="2" fill="#FF8A98"/>
+    <circle cx="132" cy="286" r="2.5" fill="#FF5068"/>
+    <circle cx="382" cy="292" r="3.5" fill="#FF6B7A"/>
+    <circle cx="350" cy="330" r="2" fill="#FFB3BD"/>
+    <circle cx="168" cy="334" r="2" fill="#FF8A98"/>
+    <circle cx="210" cy="148" r="1.8" fill="#FF8A98"/>
+    <circle cx="300" cy="152" r="2.2" fill="#FF5068"/>
+    <circle cx="318" cy="356" r="2.4" fill="#FF6B7A"/>
+    <circle cx="194" cy="356" r="1.6" fill="#FFB3BD"/>
+  </g>
+
+  <!-- black box (Lunar-style base) -->
+  <g filter="url(#softShadow)">
+    <rect x="108" y="96" width="296" height="296" rx="54" fill="url(#boxTop)"/>
+    <rect x="108" y="96" width="296" height="296" rx="54" stroke="url(#boxEdge)" stroke-width="4"/>
+    <rect x="126" y="114" width="260" height="260" rx="42" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2"/>
+  </g>
+
+  <!-- emblem in front of box -->
+  <g transform="translate(256 248)">
+    <path d="M0 -78 C-34 -42 -58 -8 -54 36 C-50 78 -24 104 0 112 C24 104 50 78 54 36 C58 -8 34 -42 0 -78Z" fill="url(#blood)"/>
+    <path d="M-58 -18 C-38 -30 -22 -24 -14 -8 C-28 -2 -42 8 -58 24Z" fill="#A01024" opacity="0.95"/>
+    <path d="M58 -18 C38 -30 22 -24 14 -8 C28 -2 42 8 58 24Z" fill="#A01024" opacity="0.95"/>
+    <ellipse cx="0" cy="28" rx="18" ry="16" fill="#FF8A98" opacity="0.45"/>
+    <path d="M0 -52 L0 72" stroke="#FFBBC6" stroke-opacity="0.25" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- foreground mist particles -->
+  <g opacity="0.95">
+    <circle cx="220" cy="220" r="3" fill="#FF6B7A"/>
+    <circle cx="292" cy="228" r="2.2" fill="#FFB3BD"/>
+    <circle cx="248" cy="340" r="2.8" fill="#FF5068"/>
+    <circle cx="286" cy="312" r="1.8" fill="#FF8A98"/>
+    <circle cx="204" cy="300" r="2" fill="#FF6B7A"/>
+  </g>
+</svg>

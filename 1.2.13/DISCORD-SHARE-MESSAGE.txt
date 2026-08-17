@@ -1,0 +1,16 @@
+**BloodPact UPDATE — replace your old folder**
+
+You already had BloodPact? Do this:
+
+1. **Delete** your old bloodpact folder completely
+2. Extract this new zip to a **fresh** folder
+3. Double-click **`2-Open-BloodPact.bat`**
+4. Pick your pack → **Play** (first launch takes a few mins)
+
+**What's new**
+- **Essential** mod always on — invite friends & share worlds in-game (press Essential menu in MC)
+- **Cloud updates** — future fixes download inside the launcher (Install Update button), no full zip again
+
+After this one replace, you only run **`2-Open-BloodPact.bat`** every time.
+
+Read **FRIEND-UPDATE.txt** in the folder if anything breaks.

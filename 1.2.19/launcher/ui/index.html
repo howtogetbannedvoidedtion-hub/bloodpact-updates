@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://cdn.modrinth.com https://*.modrinth.com https://media.forgecdn.net https://*.curseforge.com; style-src 'self' 'unsafe-inline'; script-src 'self'">
+  <title>BloodPact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="splash" class="splash">
+    <div class="logo-stage splash-stage">
+      <img src="../assets/logo.png" alt="" class="logo-mark splash-logo" onerror="this.onerror=null;this.src='../assets/logo.svg'">
+    </div>
+    <h2>BloodPact</h2>
+    <p id="splash-text">Preparing client...</p>
+    <div class="splash-bar"><span id="splash-bar-fill"></span></div>
+  </div>
+
+  <div id="app" class="shell hidden">
+    <div class="bg-glow"></div>
+    <div class="bg-grid"></div>
+
+    <header class="app-header">
+      <div class="header-brand-block">
+        <img src="../assets/logo.png" alt="" class="header-logo" onerror="this.onerror=null;this.src='../assets/logo.svg'">
+        <div class="header-titles">
+          <strong class="header-name">BloodPact</strong>
+          <span class="header-tag" id="header-tag">PvP Client</span>
+        </div>
+      </div>
+
+      <nav class="meteor-tabs" role="tablist" aria-label="Launcher sections">
+        <button type="button" class="meteor-tab active" data-tab="home" role="tab" aria-selected="true">Home</button>
+        <button type="button" class="meteor-tab" data-tab="mods" role="tab" aria-selected="false">Mods</button>
+        <button type="button" class="meteor-tab" data-tab="browse" role="tab" aria-selected="false">Browse</button>
+        <button type="button" class="meteor-tab" data-tab="settings" role="tab" aria-selected="false">Settings</button>
+      </nav>
+
+      <div class="header-user">
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="Minecraft name" autocomplete="username" maxlength="16">
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="panel active home-panel" data-panel="home">
+        <div class="dash-grid">
+          <article class="dash-card">
+            <p class="eyebrow" id="hero-eyebrow">Fabric • Minecraft 26.1.2</p>
+            <h1 id="hero-title">BloodPact</h1>
+            <p class="hero-copy" id="hero-copy">Launch with your selected version pack. Mods sync automatically when you press Play.</p>
+
+            <div id="update-banner" class="update-banner hidden">
+              <div>
+                <strong id="update-banner-title">Update available</strong>
+                <p id="update-banner-copy">A newer BloodPact build is ready.</p>
+              </div>
+              <button id="install-update-btn" type="button" class="secondary-btn">Install Update</button>
+            </div>
+
+            <div id="crash-alert" class="crash-alert hidden">
+              <strong>Minecraft crashed</strong>
+              <p id="crash-alert-text"></p>
+              <button id="crash-alert-open" type="button" class="secondary-btn crash-log-btn">View crash log</button>
+            </div>
+
+            <div class="status-block">
+              <h3>Launch status</h3>
+              <p id="status" class="status-line">Ready to launch</p>
+              <ul id="launch-summary" class="summary-list"></ul>
+            </div>
+          </article>
+
+          <article class="dash-card dash-side">
+            <p id="setup-note" class="setup-note">Essential mod stays on (except Vanilla) so friends can share worlds. First Play installs Minecraft, Fabric, and mods.</p>
+            <div class="op-seed-panel">
+              <div class="panel-head compact">
+                <h3>OP World Seeds</h3>
+                <p>Pick a seed before Play — auto-fills Create World and warps you to the loot spot.</p>
+              </div>
+              <label class="field full">
+                <span>Curated seed</span>
+                <select id="op-seed-select" class="visually-hidden" aria-hidden="true" tabindex="-1"></select>
+                <div id="op-seed-list" class="op-seed-list"></div>
+              </label>
+              <label class="field full">
+                <span>Custom seed (optional)</span>
+                <input id="custom-op-seed" type="text" inputmode="numeric" placeholder="e.g. -7311192211761052731" autocomplete="off">
+              </label>
+              <p id="op-seed-description" class="settings-note">No seed selected — singleplayer uses random worlds.</p>
+              <div class="op-seed-actions">
+                <button id="clear-op-seed-btn" type="button" class="secondary-btn">Clear</button>
+                <button id="copy-op-seed-btn" type="button" class="secondary-btn">Copy seed</button>
+              </div>
+            </div>
+            <div class="hero-tags" id="hero-tags">
+              <span>HUD + Keystrokes</span>
+              <span>Reach</span>
+              <span>Combat</span>
+              <span>Movement</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel mods-panel" data-panel="mods">
+        <div class="panel-head">
+          <h2 id="mods-panel-title">Modpack</h2>
+          <p id="mods-panel-copy">Toggle optional mods for the active version pack.</p>
+        </div>
+        <div id="mod-categories" class="mod-sections"></div>
+        <div class="local-panel">
+          <h3>Jars on disk</h3>
+          <ul id="local-mod-list"></ul>
+        </div>
+      </section>
+
+      <section class="panel browse-panel" data-panel="browse">
+        <div class="panel-head browse-intro">
+          <h2 id="browse-title">Browse Mods</h2>
+          <p id="browse-copy">Search and add mods for your Minecraft version.</p>
+        </div>
+
+        <div class="source-switcher" role="tablist" aria-label="Mod source">
+          <button type="button" class="source-tab active" data-source="modrinth" role="tab" aria-selected="true">
+            <span class="source-dot modrinth"></span>
+            Modrinth
+          </button>
+          <button type="button" class="source-tab" data-source="curseforge" role="tab" aria-selected="false">
+            <span class="source-dot curseforge"></span>
+            CurseForge
+          </button>
+          <button type="button" class="source-tab" data-source="free" role="tab" aria-selected="false">
+            <span class="source-dot free"></span>
+            Free Picks
+          </button>
+        </div>
+
+        <form id="mod-search-form" class="search-bar">
+          <input id="mod-search-query" type="search" placeholder="Search mods… e.g. sodium, minimap, voice chat" autocomplete="off">
+          <button type="submit" class="search-btn">Search</button>
+        </form>
+
+        <div id="mod-browse-status" class="browse-status">Pick a source, then search or browse.</div>
+        <div id="mod-browse-results" class="mod-browse-results"></div>
+
+        <div class="installed-section">
+          <div class="panel-head compact">
+            <h3>Added mods</h3>
+            <p>Installed into this profile's mods folder.</p>
+          </div>
+          <div id="custom-mod-list" class="custom-mod-list"></div>
+        </div>
+      </section>
+
+      <section class="panel settings-panel" data-panel="settings">
+        <div class="panel-head">
+          <h2>Settings</h2>
+          <p>Memory, paths, and update options.</p>
+        </div>
+        <div class="settings-grid">
+          <div class="field full settings-note" id="update-settings-panel">
+            <div class="update-settings-head">
+              <strong>Cloud updates</strong>
+              <span id="pack-version-label">Pack v1.0.0</span>
+            </div>
+            <p id="update-status-text">Checking for updates...</p>
+            <button id="check-updates-btn" type="button" class="secondary-btn">Check for updates</button>
+            <button id="settings-install-update-btn" type="button" class="secondary-btn hidden">Install update</button>
+          </div>
+          <label class="field full">
+            <span>Account username</span>
+            <input id="account-username" type="text" placeholder="Your main Minecraft name" autocomplete="username" maxlength="16">
+          </label>
+          <div class="field full settings-note">
+            Saved username loads every launch. The top bar field is for a one-off session name only.
+          </div>
+          <label class="field full">
+            <span>CurseForge API key (optional)</span>
+            <input id="curseforge-api-key" type="password" placeholder="Paste key from console.curseforge.com" autocomplete="off">
+          </label>
+          <div class="field full settings-note">
+            Only needed for CurseForge browse. Modrinth and Free Picks work without a key.
+          </div>
+          <label class="field">
+            <span>RAM (per profile)</span>
+            <select id="memory">
+              <option value="1536M">1.5 GB (4 GB PCs)</option>
+              <option value="2G">2 GB</option>
+              <option value="3G">3 GB</option>
+              <option value="4G" selected>4 GB</option>
+              <option value="6G">6 GB</option>
+              <option value="8G">8 GB</option>
+              <option value="10G">10 GB</option>
+              <option value="12G">12 GB</option>
+              <option value="16G">16 GB</option>
+            </select>
+          </label>
+          <div class="field full settings-note" id="memory-note">
+            Safe maximum on this PC: calculating…
+          </div>
+          <label class="field full">
+            <span>Java for this profile</span>
+            <code id="java-path">...</code>
+          </label>
+          <label class="field full">
+            <span>Instance mods folder</span>
+            <code id="minecraft-path">...</code>
+          </label>
+          <div class="field full crash-log-panel" id="crash-log-panel">
+            <div class="crash-log-head">
+              <span>Latest crash log</span>
+              <button id="open-crash-log-btn" type="button" class="secondary-btn crash-log-btn">Open report</button>
+            </div>
+            <p id="crash-log-summary" class="crash-log-summary">No crashes recorded for this profile.</p>
+            <pre id="crash-log-preview" class="crash-log-preview hidden"></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="launchbar">
+      <div class="launch-meta">
+        <img src="../assets/logo.png" alt="" class="launch-logo" onerror="this.onerror=null;this.src='../assets/logo.svg'">
+        <div>
+          <strong id="mc-version">Minecraft 26.1.2</strong>
+          <span id="loader-tag">Fabric Loader</span>
+        </div>
+      </div>
+      <label class="launch-profile-field">
+        <span>Version pack</span>
+        <select id="launch-profile-select" title="Switch version pack"></select>
+      </label>
+      <button id="play-btn" class="play-btn" type="button">
+        <span class="play-label">Play</span>
+        <span class="play-sub">Auto-syncs mods</span>
+      </button>
+    </footer>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

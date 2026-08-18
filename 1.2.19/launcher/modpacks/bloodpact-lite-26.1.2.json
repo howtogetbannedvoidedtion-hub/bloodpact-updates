@@ -1,0 +1,53 @@
+{
+  "id": "bloodpact-lite-26.1.2",
+  "name": "BloodPact Lite (4 GB PCs)",
+  "description": "Minimal BloodPact for low-RAM PCs — BloodPact + Fabric API + Sodium only. Use 2 GB RAM in Settings. Close other apps before Play.",
+  "minecraftVersion": "26.1.2",
+  "loader": "fabric",
+  "fabricLoaderVersion": "0.19.3",
+  "javaMajor": 25,
+  "defaultMemory": "2G",
+  "skipEssential": true,
+  "lowRamProfile": true,
+  "tags": ["bloodpact", "lite", "4gb", "low-ram"],
+  "categories": {
+    "core": "BloodPact Client",
+    "performance": "Performance"
+  },
+  "mods": [
+    {
+      "id": "bloodpact",
+      "name": "BloodPact",
+      "category": "core",
+      "required": true,
+      "source": "local",
+      "localPaths": [
+        "bundled-mods/bloodpact-26.1.2-1.0.0.jar",
+        "launcher/bundled-mods/bloodpact-26.1.2-1.0.0.jar",
+        "modern/build/libs/bloodpact-26.1.2-1.0.0.jar",
+        "modern/build/libs/bloodpact-26.1.2-1.0.0-dev.jar",
+        "build/libs/bloodpact-26.1.2-1.0.0.jar"
+      ],
+      "buildHint": "Run FIX-BLOODPACT.bat or ask your friend for BloodPact-Repair.zip"
+    },
+    {
+      "id": "fabric-api",
+      "name": "Fabric API",
+      "category": "core",
+      "required": true,
+      "source": "modrinth",
+      "projectId": "P7dR8mSH",
+      "fallbackFilename": "fabric-api"
+    },
+    {
+      "id": "sodium",
+      "name": "Sodium",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "AANobbMI",
+      "fallbackFilename": "sodium"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+**BloodPact v1.2.14 — pick the right zip**
+
+**Already have BloodPact?**
+
+| Zip | Size | Use when |
+|-----|------|----------|
+| **BloodPact-Cloud-Patch-v1.2.14** | tiny (Discord OK) | Update check broken / need cloud updates only |
+| **BloodPact-Patch-v1.2.14** | small | Normal update (mod + launcher files) |
+| **BloodPact-Repair** | ~200 MB (Drive/Mega) | Launcher won't open or files broken |
+
+**Cloud patch (Discord):**
+1. Extract zip
+2. Copy `launcher` folder into your BloodPact folder (overwrite)
+3. Run **`2-Open-BloodPact.bat`** → Settings → Check for updates
+
+**Full pack (first time):**
+1. Extract **BloodPact-For-Friend.zip**
+2. **`2-Open-BloodPact.bat`** → Play
+
+Read **FRIEND-UPDATE.txt** in the folder if anything breaks.

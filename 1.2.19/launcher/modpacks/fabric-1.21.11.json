@@ -1,0 +1,77 @@
+{
+  "id": "fabric-1.21.11",
+  "name": "Fabric 1.21.11",
+  "description": "Performance Fabric pack for Minecraft 1.21.11 — no BloodPact client mod.",
+  "minecraftVersion": "1.21.11",
+  "loader": "fabric",
+  "fabricLoaderVersion": "0.19.3",
+  "javaMajor": 21,
+  "defaultMemory": "4G",
+  "tags": ["performance", "fabric"],
+  "categories": {
+    "core": "Required",
+    "performance": "Performance",
+    "utility": "Utilities"
+  },
+  "mods": [
+    {
+      "id": "fabric-api",
+      "name": "Fabric API",
+      "category": "core",
+      "required": true,
+      "source": "modrinth",
+      "projectId": "P7dR8mSH",
+      "fallbackFilename": "fabric-api"
+    },
+    {
+      "id": "essential",
+      "name": "Essential",
+      "category": "core",
+      "required": true,
+      "essential": true,
+      "source": "modrinth",
+      "projectId": "k2ZPuTBm",
+      "fallbackFilename": "essential"
+    },
+    {
+      "id": "modmenu",
+      "name": "Mod Menu",
+      "category": "utility",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "mOgUt4GM",
+      "fallbackFilename": "modmenu"
+    },
+    {
+      "id": "sodium",
+      "name": "Sodium",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "AANobbMI",
+      "fallbackFilename": "sodium"
+    },
+    {
+      "id": "lithium",
+      "name": "Lithium",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "gvQqBUqZ",
+      "fallbackFilename": "lithium"
+    },
+    {
+      "id": "ferritecore",
+      "name": "FerriteCore",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "uXXizFIs",
+      "fallbackFilename": "ferritecore"
+    }
+  ]
+}

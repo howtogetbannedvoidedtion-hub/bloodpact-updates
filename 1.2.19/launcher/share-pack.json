@@ -1,0 +1,5 @@
+{
+  "curseForgeApiKey": "",
+  "updateManifestUrl": "https://raw.githubusercontent.com/howtogetbannedvoidedtion-hub/bloodpact-updates/main/manifest.json",
+  "_instructions": "Cloud updates point at GitHub repo bloodpact-updates. Run 7-Upload-Cloud-To-GitHub.bat after gh auth login."
+}

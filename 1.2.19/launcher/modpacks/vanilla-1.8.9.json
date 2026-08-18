@@ -1,0 +1,12 @@
+{
+  "id": "vanilla-1.8.9",
+  "name": "Vanilla 1.8.9",
+  "description": "Classic PvP version — vanilla Minecraft 1.8.9, no mods.",
+  "minecraftVersion": "1.8.9",
+  "loader": "vanilla",
+  "javaMajor": 8,
+  "defaultMemory": "2G",
+  "tags": ["pvp", "vanilla", "legacy"],
+  "categories": {},
+  "mods": []
+}

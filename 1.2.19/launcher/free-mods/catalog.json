@@ -1,0 +1,145 @@
+{
+  "categories": {
+    "performance": "Performance",
+    "utility": "Utility",
+    "visual": "Visual",
+    "pvp": "PvP & Combat"
+  },
+  "mods": [
+    {
+      "id": "sodium",
+      "name": "Sodium",
+      "description": "Modern rendering engine — big FPS boost on Fabric.",
+      "category": "performance",
+      "source": "modrinth",
+      "projectId": "AANobbMI",
+      "loaders": ["fabric"]
+    },
+    {
+      "id": "lithium",
+      "name": "Lithium",
+      "description": "General-purpose optimizations for game logic and AI.",
+      "category": "performance",
+      "source": "modrinth",
+      "projectId": "gvQqBUqZ",
+      "loaders": ["fabric"]
+    },
+    {
+      "id": "iris",
+      "name": "Iris Shaders",
+      "description": "Shader support for Sodium — free shader packs work great.",
+      "category": "visual",
+      "source": "modrinth",
+      "projectId": "YL57xq9U",
+      "loaders": ["fabric"]
+    },
+    {
+      "id": "modmenu",
+      "name": "Mod Menu",
+      "description": "View and configure installed mods in-game.",
+      "category": "utility",
+      "source": "modrinth",
+      "projectId": "mOgUt4GM",
+      "loaders": ["fabric"]
+    },
+    {
+      "id": "appleskin",
+      "name": "AppleSkin",
+      "description": "Food/hunger HUD info — useful for PvP potion timing.",
+      "category": "utility",
+      "source": "modrinth",
+      "projectId": "Etfs2kMj",
+      "loaders": ["fabric", "forge"]
+    },
+    {
+      "id": "zoomify",
+      "name": "Zoomify",
+      "description": "Smooth zoom key — like OptiFine zoom on Fabric.",
+      "category": "utility",
+      "source": "modrinth",
+      "projectId": "wwmNZAAM",
+      "loaders": ["fabric"]
+    },
+    {
+      "id": "entityculling",
+      "name": "Entity Culling",
+      "description": "Skips rendering hidden entities for better FPS.",
+      "category": "performance",
+      "source": "modrinth",
+      "projectId": "NNAgCjsB",
+      "loaders": ["fabric", "forge"]
+    },
+    {
+      "id": "ferritecore",
+      "name": "FerriteCore",
+      "description": "Lowers memory usage — helpful for modded PvP.",
+      "category": "performance",
+      "source": "modrinth",
+      "projectId": "uXXizFIs",
+      "loaders": ["fabric", "forge"]
+    },
+    {
+      "id": "immediatelyfast",
+      "name": "ImmediatelyFast",
+      "description": "Speeds up immediate-mode rendering and GUIs.",
+      "category": "performance",
+      "source": "modrinth",
+      "projectId": "5ZwdcRci",
+      "loaders": ["fabric", "forge"]
+    },
+    {
+      "id": "cloth-config",
+      "name": "Cloth Config",
+      "description": "Config library used by many free Fabric mods.",
+      "category": "utility",
+      "source": "modrinth",
+      "projectId": "9s6osm5g",
+      "loaders": ["fabric", "forge"]
+    },
+    {
+      "id": "bobby",
+      "name": "Bobby",
+      "description": "Keeps far render distance chunks loaded — smooth visuals.",
+      "category": "visual",
+      "source": "modrinth",
+      "projectId": "qyVFJ9Yw",
+      "loaders": ["fabric"]
+    },
+    {
+      "id": "dynamicfps",
+      "name": "Dynamic FPS",
+      "description": "Lowers FPS when Minecraft is in the background.",
+      "category": "performance",
+      "source": "modrinth",
+      "projectId": "LUDov4mM",
+      "loaders": ["fabric", "forge"]
+    },
+    {
+      "id": "fullbright",
+      "name": "Gamma Utils (Fullbright)",
+      "description": "Toggle fullbright and other gamma tweaks.",
+      "category": "utility",
+      "source": "modrinth",
+      "projectId": "I6E1qP5n",
+      "loaders": ["fabric"]
+    },
+    {
+      "id": "freelook",
+      "name": "Freelook",
+      "description": "Look around without turning your body — popular in PvP.",
+      "category": "pvp",
+      "source": "modrinth",
+      "projectId": "9a2e2i1M",
+      "loaders": ["fabric"]
+    },
+    {
+      "id": "shulkerboxtooltip",
+      "name": "Shulker Box Tooltip",
+      "description": "Preview shulker contents on hover — QoL for kitting.",
+      "category": "utility",
+      "source": "modrinth",
+      "projectId": "2MQL79ji",
+      "loaders": ["fabric", "forge"]
+    }
+  ]
+}

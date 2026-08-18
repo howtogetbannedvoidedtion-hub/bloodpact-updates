@@ -1,0 +1,105 @@
+{
+  "id": "donut-smp-26.1.2",
+  "name": "Donut SMP",
+  "description": "BloodPact for Donut SMP — auto-connects to donutsmp.net. Singleplayer worlds still work from the main menu.",
+  "minecraftVersion": "26.1.2",
+  "loader": "fabric",
+  "fabricLoaderVersion": "0.19.3",
+  "javaMajor": 25,
+  "defaultMemory": "4G",
+  "skipEssential": true,
+  "tags": ["donut", "bloodpact", "multiplayer"],
+  "server": {
+    "host": "donutsmp.net",
+    "port": 25565
+  },
+  "categories": {
+    "core": "BloodPact Client",
+    "performance": "Performance"
+  },
+  "mods": [
+    {
+      "id": "bloodpact",
+      "name": "BloodPact",
+      "category": "core",
+      "required": true,
+      "source": "local",
+      "localPaths": [
+        "bundled-mods/bloodpact-26.1.2-1.0.0.jar",
+        "launcher/bundled-mods/bloodpact-26.1.2-1.0.0.jar",
+        "modern/build/libs/bloodpact-26.1.2-1.0.0.jar",
+        "modern/build/libs/bloodpact-26.1.2-1.0.0-dev.jar"
+      ],
+      "buildHint": "Run 3-Build-Mod-26.bat once, or put bloodpact-26.1.2-1.0.0.jar in bundled-mods/"
+    },
+    {
+      "id": "fabric-api",
+      "name": "Fabric API",
+      "category": "core",
+      "required": true,
+      "source": "modrinth",
+      "projectId": "P7dR8mSH",
+      "fallbackFilename": "fabric-api"
+    },
+    {
+      "id": "sodium",
+      "name": "Sodium",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "AANobbMI",
+      "fallbackFilename": "sodium"
+    },
+    {
+      "id": "lithium",
+      "name": "Lithium",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "gvQqBUqZ",
+      "fallbackFilename": "lithium"
+    },
+    {
+      "id": "ferritecore",
+      "name": "FerriteCore",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "uXXizFIs",
+      "fallbackFilename": "ferritecore"
+    },
+    {
+      "id": "entityculling",
+      "name": "Entity Culling",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "NNAgCjsB",
+      "fallbackFilename": "entityculling"
+    },
+    {
+      "id": "badoptimizations",
+      "name": "BadOptimizations",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "g96Z4WVZ",
+      "fallbackFilename": "badoptimizations"
+    },
+    {
+      "id": "immediatelyfast",
+      "name": "ImmediatelyFast",
+      "category": "performance",
+      "required": false,
+      "defaultEnabled": true,
+      "source": "modrinth",
+      "projectId": "5ZwdcRci",
+      "fallbackFilename": "immediatelyfast"
+    }
+  ]
+}

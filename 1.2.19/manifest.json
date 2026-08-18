@@ -1,0 +1,223 @@
+{
+    "version":  "1.2.19",
+    "releasedAt":  "2026-08-18T22:50:14.0107671Z",
+    "changelog":  "Fix JSON BOM parse errors and broken 0.0.0 version installs",
+    "baseUrl":  "https://raw.githubusercontent.com/howtogetbannedvoidedtion-hub/bloodpact-updates/main/1.2.19/",
+    "files":  [
+                  {
+                      "path":  "launcher/op-seeds/catalog.json",
+                      "sha256":  "4975bf0d87549e91583180e6c85e96d5a4e9500e903f0dc4e10d06ab959168bf",
+                      "size":  3965
+                  },
+                  {
+                      "path":  "launcher/src/modpackRegistry.js",
+                      "sha256":  "4ef4c5d09deb141dd62025a21ddde28769f4aaed3b8ac92e0fc822e43947ef36",
+                      "size":  7645
+                  },
+                  {
+                      "path":  "launcher/modpacks/bloodpact-26.1.2.json",
+                      "sha256":  "6e2baee9973d9fa3163c2ea1c2ea8d62db0069f5cbb0e8e858bb2aaef7096ab9",
+                      "size":  3143
+                  },
+                  {
+                      "path":  "launcher/modpacks/donut-smp-26.1.2.json",
+                      "sha256":  "e5ca164eff951c53817bce850f79ddfefaac7c97b5b60c5feabf0d2d05fd1f38",
+                      "size":  2816
+                  },
+                  {
+                      "path":  "launcher/src/opSeedService.js",
+                      "sha256":  "fad83d5a6bcc7875500f4f6b1c09b8d7ba875384839e58a87d53382c6a8aa677",
+                      "size":  5854
+                  },
+                  {
+                      "path":  "launcher/free-mods/catalog.json",
+                      "sha256":  "447167225a7a2ad8091220952803360fdaaa9e7073bea090b6eff07f3c056865",
+                      "size":  4256
+                  },
+                  {
+                      "path":  "launcher/src/instancePerformance.js",
+                      "sha256":  "25567520fbb6591d9b007069d015c8311f6089bb13a24d15241cad0b69c2640b",
+                      "size":  2045
+                  },
+                  {
+                      "path":  "bundled-mods/bloodpact-26.1.2-1.0.0.jar",
+                      "sha256":  "a95f1f305ba9770a7ef0dda1b3f42b249176028070a261e70dc48505a2008d56",
+                      "size":  675691
+                  },
+                  {
+                      "path":  "tools/repair-launcher.ps1",
+                      "sha256":  "b0066977cf00de6b0ebcdcd6f5d30afd848365d8b294cb6926ac18277c75552a",
+                      "size":  2790
+                  },
+                  {
+                      "path":  "launcher/modpacks/fabric-26.2.json",
+                      "sha256":  "a800e42ebd5567f17bacbf12a735bb5dae11596077863a9a5ebe2921f2a5c025",
+                      "size":  2996
+                  },
+                  {
+                      "path":  "launcher/src/preload.js",
+                      "sha256":  "7a7be5ef4ecccd1f2b21e75f2b2ae915e72ed1c9a2cdf8d03007629ee1d465d0",
+                      "size":  1629
+                  },
+                  {
+                      "path":  "launcher/assets/logo.svg",
+                      "sha256":  "085048b97b90b33e39365e8920cd61a97e2398419b178bf27f810eddd1e15c86",
+                      "size":  3451
+                  },
+                  {
+                      "path":  "launcher/src/main.js",
+                      "sha256":  "2a13c668ba47f9e7434940f8e6290084f5a3f97b1f87e34cf6cbc6b6a485c94d",
+                      "size":  12725
+                  },
+                  {
+                      "path":  "launcher/assets/app-icon.svg",
+                      "sha256":  "2b9dc5dad2b2b172a08ecab9724af2c226d97cadeffc87b2b1f7d34c55e2097c",
+                      "size":  429
+                  },
+                  {
+                      "path":  "launcher/bundled-mods/bloodpact-26.1.2-1.0.0.jar",
+                      "sha256":  "a95f1f305ba9770a7ef0dda1b3f42b249176028070a261e70dc48505a2008d56",
+                      "size":  675691
+                  },
+                  {
+                      "path":  "tools/bloodpact-paths.ps1",
+                      "sha256":  "2bf3090aa4de2a8aca1adb6470443edd4066dfd6d154231dd749118cc3e8ab3f",
+                      "size":  2168
+                  },
+                  {
+                      "path":  "launcher/assets/logo.png",
+                      "sha256":  "7c9d6e938beff18ed8750ded04c64b9eaea6da61ef57d4e2e260219aa8b84dab",
+                      "size":  1908414
+                  },
+                  {
+                      "path":  "APPLY-REPAIR.bat",
+                      "sha256":  "328a3ed0168de21574b6fc0d03eeba375cf2e2c7923c95ddba75d619f55cebe5",
+                      "size":  764
+                  },
+                  {
+                      "path":  "launcher/ui/renderer.js",
+                      "sha256":  "fdbffe7026e424af263cf0bc292906756b82d099e9352a11665d1a89ccc2c531",
+                      "size":  35656
+                  },
+                  {
+                      "path":  "launcher/modpacks/vanilla-1.8.9.json",
+                      "sha256":  "29de0c7af20367d74a7dbcb1bacdd1f81763e72a256dec8017461e1d7e9af14d",
+                      "size":  316
+                  },
+                  {
+                      "path":  "launcher/ui/styles.css",
+                      "sha256":  "5912aaf2a83200faeb434b13751e6f880234a2ba18349ac530c26f72f358bab6",
+                      "size":  19560
+                  },
+                  {
+                      "path":  "launcher/src/updateService.js",
+                      "sha256":  "d4b8bd36fcc82a34ba8f7c64fe02924c8e33c8c746fc8c91ae28206584412a67",
+                      "size":  9605
+                  },
+                  {
+                      "path":  "DISCORD-SHARE-MESSAGE.txt",
+                      "sha256":  "882f1e360ef7d3b6fcabee45c920263208f20fb44e21a0020b350a65096186d8",
+                      "size":  785
+                  },
+                  {
+                      "path":  "launcher/package-lock.json",
+                      "sha256":  "a1a09d515a6ca82f12bdc774a359cfe3dcb44f1b0c3ea4e6480d6b0e169fbf1d",
+                      "size":  202797
+                  },
+                  {
+                      "path":  "BloodPact.bat",
+                      "sha256":  "c1292a850d71fa59d44613909e470a099cd8eff351b0717f6133c10adb124996",
+                      "size":  95
+                  },
+                  {
+                      "path":  "launcher/bootstrap.js",
+                      "sha256":  "2e2c132d4a02f6f83a3a415dd9288b23ae2d64a45cbc9958731e0e3205a7777c",
+                      "size":  5731
+                  },
+                  {
+                      "path":  "launcher/modpacks/bloodpact-1.21.json",
+                      "sha256":  "30be3b64d4cdffd80b7e8d819dd0a05a3dee6f03238830ca17a41fe70c6e9792",
+                      "size":  2878
+                  },
+                  {
+                      "path":  "launcher/assets/icon.png",
+                      "sha256":  "7c9d6e938beff18ed8750ded04c64b9eaea6da61ef57d4e2e260219aa8b84dab",
+                      "size":  1908414
+                  },
+                  {
+                      "path":  "launcher/src/crashLogService.js",
+                      "sha256":  "e444c6686c6691024e9e84fbc8eedaa27686eb8171e480ad4f576c35ee721b23",
+                      "size":  3148
+                  },
+                  {
+                      "path":  "tools/ensure-runtime.ps1",
+                      "sha256":  "71edb36d617325cdf16cdb365495a2403dc8784bcc620a743f7cf55ed7c8b3b2",
+                      "size":  4852
+                  },
+                  {
+                      "path":  "launcher/modpacks/fabric-1.21.11.json",
+                      "sha256":  "bef0e87dd1a6397c1d5bf50647f0e2080b4691ea4ee06a6dee6e00b7c8479f6f",
+                      "size":  1958
+                  },
+                  {
+                      "path":  "tools/friend-cleanup.ps1",
+                      "sha256":  "b2f1ae1bca99eb98dbf77a04e81616b57b96e9b97fb48f56e6716325aaa48908",
+                      "size":  4498
+                  },
+                  {
+                      "path":  "launcher/src/modManager.js",
+                      "sha256":  "ac6284cf00155cd739cf5236e958107b713c9c4edc7d9e73f03ad0dd102264e7",
+                      "size":  61560
+                  },
+                  {
+                      "path":  "2-Open-BloodPact.bat",
+                      "sha256":  "9d97c587f55e13550300b7a7f3baa7a5dccd6d48ef83b6bb369b979ea1f11097",
+                      "size":  1951
+                  },
+                  {
+                      "path":  "bundled-mods/README.txt",
+                      "sha256":  "6ee0e7c0d5c5a424006b7fd3af18c197a473c6135f3a16fa6761c8690fa82d33",
+                      "size":  236
+                  },
+                  {
+                      "path":  "launcher/src/bundledRuntime.js",
+                      "sha256":  "92b8c1db8b23f6c214a46503fe912144205d9ddf5148bf74003ebf08be864d59",
+                      "size":  3622
+                  },
+                  {
+                      "path":  "launcher/package.json",
+                      "sha256":  "b5bcb151426432a67a128625c05899d9e5583c37163ada92efecf571c917d20a",
+                      "size":  1124
+                  },
+                  {
+                      "path":  "launcher/share-pack.json",
+                      "sha256":  "4ec188d3cb13a9a5997f156d440a63bd1e98ddab41c6e0cf6f4f6685d5238f26",
+                      "size":  285
+                  },
+                  {
+                      "path":  "launcher/src/launcherService.js",
+                      "sha256":  "a2061ea213753bc118dc93ae8451237cd01a40eb6786ce946887b43c8937d0cd",
+                      "size":  23481
+                  },
+                  {
+                      "path":  "launcher/modpacks/fabric-26.1.2.json",
+                      "sha256":  "777b722101c8ccfca0e0587e19d7c1f8b22235c54161942f74c0746e8aad5ff1",
+                      "size":  3073
+                  },
+                  {
+                      "path":  "launcher/ui/index.html",
+                      "sha256":  "5bb858c6a6d444ea52cd8a5717f2dacf9328530137dbc15752ac671ff34aa1f8",
+                      "size":  11235
+                  },
+                  {
+                      "path":  "FIX-BLOODPACT.bat",
+                      "sha256":  "8059339fddb506fa062ff48cc4e2c5bc43641c72f77c0ffea835e21bf7a181b1",
+                      "size":  1059
+                  },
+                  {
+                      "path":  "launcher/modpacks/bloodpact-lite-26.1.2.json",
+                      "sha256":  "d8a8e5f58b47245055b87478cb1483797289faa77aed25775b248df8d291e69c",
+                      "size":  1554
+                  }
+              ]
+}
